@@ -1,0 +1,19 @@
+{
+  "name": "windows-case-sensitive-commit-util",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "rename": "ts-node flarbify.ts",
+    "undo": "ts-node flarbundo.ts",
+    "list": "ts-node flarblist.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^7.0.5",
+    "lodash": "^4.17.4",
+    "path": "^0.12.7",
+    "ts-node": "^2.1.0"
+  }
+}
