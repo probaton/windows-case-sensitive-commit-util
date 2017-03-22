@@ -3,7 +3,7 @@ import { doToFiles } from "./flarbfiles";
 import * as fs from "fs";
 
 function flarbify(filePath: string) {
-    fs.rename(filePath, filePath.slice(0, filePath.length-2));
+    fs.rename(filePath, filePath.slice(0, filePath.length-Conf.append.length));
 }
 
 function fileLogger(filePath: string) {

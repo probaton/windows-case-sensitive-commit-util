@@ -1,5 +1,5 @@
 export const Conf = {
-    baseDir: ".",
-    suffix: ".ts",
+    baseDir: "./things/",
+    suffix: ".element.ts",
     append: "flarb"
 };

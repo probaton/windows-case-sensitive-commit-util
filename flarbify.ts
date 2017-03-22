@@ -2,9 +2,9 @@ import { Conf } from "./conf";
 import { doToFiles } from "./flarbfiles";
 import * as fs from "fs";
 
-function flarbify(filePath: string) {
-    fs.rename(filePath, filePath + "s");
+function flarbifier(filePath: string) {
+    fs.rename(filePath, filePath + Conf.append);
 }
 
-doToFiles(Conf.baseDir, flarbify, Conf.append);
+doToFiles(Conf.baseDir, flarbifier, Conf.suffix);
 
